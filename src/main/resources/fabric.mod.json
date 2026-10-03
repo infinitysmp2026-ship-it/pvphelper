@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "pvphelper",
+	"version": "${version}",
+	"name": "PvP Helper",
+	"description": "Client-side helper: TNT Cart Helper, Pearl Catch Helper and Lunge Helper in one mod. No server installation required.",
+	"authors": [
+		"PvP Helper"
+	],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.pvphelper.PvPHelperClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "pvphelper.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
